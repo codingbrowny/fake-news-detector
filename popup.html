@@ -11,12 +11,15 @@
       crossorigin="anonymous"
     />
     <title>Fake News Detector</title>
+
     <style>
       html body {
         padding: 0;
         margin: 0;
         width: 400px;
         min-height: 450px;
+        box-sizing: border-box;
+        border: 2px solid #0275d8;
       }
 
       label {
@@ -27,13 +30,24 @@
         margin: 20px 0;
         width: 100%;
       }
+.header {
+  padding: 10px 0 20px;
+}
+
+.header-title{
+text-transform: capitalize;
+font-size: 1.5em;
+color: #0275d8;
+}
     </style>
   </head>
   <body>
     <div class="container">
       <form action="" method="POST">
         <div class="for-group">
-          
+          <div class="header">
+            <div class="header-title">fake news detector</div>
+          </div>
           <label for="model">Select Model</label>
           <select class="form-select" aria-label="Default select example">
             <option value="1" selected>Neural Network</option>
